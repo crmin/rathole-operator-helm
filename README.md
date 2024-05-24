@@ -1,6 +1,8 @@
 # Rathole Operator Helm Chart
 
-[Rathole Operator](https://github.com/crmin/rathole-operator)
+Helm chart will move to operator repository.
+
+See: [Rathole Operator](https://github.com/crmin/rathole-operator)
 
 ## Install Helm Chart
 
