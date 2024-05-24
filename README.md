@@ -2,6 +2,35 @@
 
 [Rathole Operator](https://github.com/crmin/rathole-operator)
 
+## Install Helm Chart
+
+First, add the repository to your helm client.
+```
+$ helm repo add rathole-operator https://rathole-operator.superclass.io
+$ helm repo update
+$ helm repo list
+$ helm search repo rathole-operator
+```
+
+If repo added successfully, you can see the chart in the list.
+
+```
+NAME                             	CHART VERSION	APP VERSION	DESCRIPTION
+rathole-operator/rathole-operator	0.1.0        	1.16.0     	A Helm chart for Kubernetes
+```
+
+Then, install the chart with the following command.
+
+```
+$ helm install rathole-operator rathole-operator/rathole-operator
+```
+
+or you can install with the values file.
+
+```
+$ helm install rathole-operator rathole-operator/rathole-operator -f values.yaml
+```
+
 ## Values
 
 ```yaml
